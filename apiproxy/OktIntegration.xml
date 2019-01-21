@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="7" name="OktIntegration">
+    <Basepaths>/oauth-ext</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1544621297686</CreatedAt>
+    <CreatedBy>priya41195avanoorkar@gmail.com</CreatedBy>
+    <Description>OktIntegration</Description>
+    <DisplayName>oauth2</DisplayName>
+    <LastModifiedAt>1547120375377</LastModifiedAt>
+    <LastModifiedBy>priya41195avanoorkar@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:84244c479194f802a6abb86d17c3e8bc03671f74686a820560116be2b89ac4621c20f69942ebc7337224f4ec83454250e91c33439806bd98becf59a326cc8be8</ManifestVersion>
+    <Policies>
+        <Policy>AccessTokenRefresh</Policy>
+        <Policy>AccessTokenRequest</Policy>
+        <Policy>AccessTokenResponse</Policy>
+        <Policy>AccessTokenResponseCC</Policy>
+        <Policy>AccessTokenResponseRT</Policy>
+        <Policy>Authenticate-User-With-Okta-generateAuthcode</Policy>
+        <Policy>Authenticate-User-With-Okta</Policy>
+        <Policy>Extract-Okta-User-Info</Policy>
+        <Policy>GenerateAuthorizationCode</Policy>
+        <Policy>JsonToXml</Policy>
+        <Policy>Raise-Authentication-Exception</Policy>
+        <Policy>Send404NotFoundResponse</Policy>
+        <Policy>SetAuthCodeParameters</Policy>
+        <Policy>SetOktaTokenStatus</Policy>
+        <Policy>SetValidTokenResponse</Policy>
+        <Policy>VerifyAccessToken</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://SetAuthCodeParameters.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

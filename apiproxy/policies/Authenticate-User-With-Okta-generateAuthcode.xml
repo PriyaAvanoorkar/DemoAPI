@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="Authenticate-User-With-Okta-generateAuthcode">
+    <DisplayName>Authenticate-User-With-Okta-generateAuthcode</DisplayName>
+    <Properties/>
+    <Request clearPayload="true" variable="calloutrequest">
+        <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+        <Set>
+            <QueryParams>
+                <QueryParam name="client_id">0oait48wagEauoYlv0h7</QueryParam>
+                <QueryParam name="response_type">id_token</QueryParam>
+                <QueryParam name="scope">openid</QueryParam>
+                <QueryParam name="redirect_uri">http://localhost:8080/authorization-code/callback</QueryParam>
+                <QueryParam name="state">state-296bc9a0-a2a2-4a57-be1a-d0e2fd9bb601</QueryParam>
+            </QueryParams>
+            <Verb>POST</Verb>
+        </Set>
+    </Request>
+    <Response>calloutResponse</Response>
+    <HTTPTargetConnection>
+        <Properties/>
+        <URL>https://dev-580948.oktapreview.com/oauth2/default/v1/authorize</URL>
+    </HTTPTargetConnection>
+</ServiceCallout>
